@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.FrameLayout
 import com.muban.base.BaseActivity
 import com.muban.view.DrawXXX
+import com.muban.view.SimpleHistogram
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity() {
@@ -11,7 +12,7 @@ class MainActivity : BaseActivity() {
 
     override fun init(savedInstanceState: Bundle?) {
         fl_home_root.addView(
-            DrawXXX(this),
+            SimpleHistogram(this),
             FrameLayout.LayoutParams.MATCH_PARENT,
             FrameLayout.LayoutParams.MATCH_PARENT
         )

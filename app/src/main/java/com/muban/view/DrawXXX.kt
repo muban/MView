@@ -15,9 +15,9 @@ class DrawXXX(context: Context?) : View(context) {
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
         canvas?.apply {
-            //            drawColor()
-            //            drawGraphics()
-            drawPath()
+            drawColor()
+            drawGraphics()
+//            drawPath()
         }
     }
 
@@ -73,7 +73,6 @@ class DrawXXX(context: Context?) : View(context) {
         mPaint.style = Paint.Style.STROKE
         drawArc(RectF(500f, 1000f, 1000f, 1300f), 0f, 100f, false, mPaint)
 
-
     }
 
     /**
@@ -117,7 +116,6 @@ class DrawXXX(context: Context?) : View(context) {
         //封闭当前子图形
         path.close()
         drawPath(path, mPaint)
-
     }
 
     //工口线坐标
